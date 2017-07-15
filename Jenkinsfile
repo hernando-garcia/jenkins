@@ -1,23 +1,22 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
 		sh 'sudo docker pull python:3.5.1'
                 sh 'python --version'
             }
+	}
         stage('Test') {
             steps {
-		sh 'sudo docker pull python:3.5.1'
-                sh 'python --version'
+		sh 'echo "Hello World"'
             	}
-	}
+	     }
+
         stage('Deploy') {
             steps {
-		sh 'sudo docker pull python:3.5.1'
-                sh 'python --version'
+		sh 'echo "Hello Deploy!'
             	}	
-        		}
-    			}
-	}	
-}
+             }
+    	  }
+}	
