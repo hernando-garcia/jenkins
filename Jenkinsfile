@@ -9,13 +9,13 @@ pipeline {
 	}
         stage('Test') {
             steps {
-		sh 'echo "Hello World"'
+		sh 'echo "Hello World of webhooks"'
             	}
 	     }
 
         stage('Deploy') {
             steps {
-		sh 'echo "Hello Deploy!"'
+		sh 'echo "Hello Deploy triggered by a webhook!"'
             	}	
              }
     	  }
