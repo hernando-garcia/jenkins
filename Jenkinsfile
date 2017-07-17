@@ -5,6 +5,7 @@ pipeline {
             steps {
                 sh 'python --version'
                 sh 'python -c 'import boto3'
+                sh 'python -c 'import boto'
             }
         }
     }
