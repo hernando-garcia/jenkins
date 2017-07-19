@@ -15,6 +15,7 @@ pipeline {
         stage('Deploy') {
             steps {
 		sh 'echo "Hello Deploy triggered by a webhook!"'
+		sh 'echo "Hello Deploy triggered by a webhook!"'
             	}	
              }
     	  }
