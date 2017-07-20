@@ -3,12 +3,11 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-		sh 'docker pull python:3.5.1'
+		sh 'sudo docker pull python:3.5.1'
             }
 	}
         stage('Test') {
             steps {
-		sh 'echo "Hello World of webhooks"'
 		sh 'echo "Hello World of webhooks"'
             	}
 	     }
