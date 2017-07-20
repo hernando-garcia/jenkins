@@ -9,6 +9,7 @@ pipeline {
         stage('Test') {
             steps {
 		sh 'echo "Hello World of webhooks"'
+		sh 'echo "Hello World of webhooks"'
             	}
 	     }
 
